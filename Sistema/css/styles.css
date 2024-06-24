@@ -1,0 +1,89 @@
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #999;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Specific styling for the "Reservar Quarto" page */
+.reserva {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.reserva h2 {
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%; /* Full width for even smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  form button {
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+/* Media query para iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  /* Seu estilo para o iPhone 11 aqui */
+  form {
+    width: 90%; /* Ajuste a largura conforme necessário */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  form button {
+    padding: 8px 16px; /* Ajuste o padding do botão conforme necessário */
+  }
+}

@@ -1,0 +1,99 @@
+/* Reset styles for a more baseline styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header img {
+  width: 100%;
+  max-width: 500px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #191970; /* Dark gray background */
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+nav li {
+  margin: 0 10px; /* Add some spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFFFFF; /* White text color */
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* Link hover effect (optional) */
+nav a:hover {
+  background-color: #ddd; /* Light gray hover background */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px 0; /* Reduce spacing between links */
+  }
+
+  header img {
+    max-width: 80%; /* Adjust the max-width as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+  }
+
+  nav li {
+    margin: 5px 0; /* Reduce spacing between links */
+  }
+
+  header img {
+    max-width: 70%; /* Adjust the max-width as needed */
+  }
+}
+
+/* Media query para iPhone 11 */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  /* Seu estilo para o iPhone 11 aqui */
+  form {
+    width: 90%; /* Ajuste a largura conforme necessário */
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  form button {
+    padding: 8px 16px; /* Ajuste o padding do botão conforme necessário */
+  }
+}

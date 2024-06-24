@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel XYZ - Reservar Quarto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="img/hotel_logo.png" alt="Hotel Lima">
+  </a>
+</header>
+  <main>
+    <section class="reserva">
+      <h2>Reservar Quarto</h2>
+      <form id="reservaForm">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="tipoQuarto">Tipo de Quarto:</label>
+        <select id="tipoQuarto" name="tipoQuarto" required>
+          <option value="solteiro">Solteiro</option>
+          <option value="casal">Casal</option>
+        </select>
+
+        <label for="data">Data de Chegada:</label>
+        <input type="date" id="data" name="data" required>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel XYZ - Ver Reservas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+  <a href="index.html">
+    <img src="img/hotel_logo.png" alt="Hotel Lima">
+  </a>
+</header>
+  <main>
+    <section class="ver-reservas">
+      <h2>Ver Reservas</h2>
+      <form id="buscarReservasForm">
+        <label for="nomeCompletoBusca">Nome Completo:</label>
+        <input type="text" id="nomeCompletoBusca" name="nomeCompletoBusca" required>
+        <button type="submit">Buscar Reservas</button>
+      </form>
+      <div id="resultadoReservas"></div>
+    </section>
+  </main>
+  <script src="ver_reservas.js"></script>
+</body>
+</html>
